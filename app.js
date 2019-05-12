@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var oauthRouter = require('./routes/oauth');
 var pingRouter = require('./routes/ping');
 var systemRouter = require('./routes/system');
+var storageRouter = require('./routes/storage');
 
 var app = express();
 
@@ -25,6 +26,7 @@ app.use('/', indexRouter);
 app.use('/ping', pingRouter);
 app.use('/oauth', oauthRouter);
 app.use('/system', systemRouter);
+app.use('/storage', storageRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
