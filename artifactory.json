@@ -1,0 +1,5 @@
+{
+    "artifactoryURL":"http://jainish.artifactory.com/artifactory",
+    "artifactoryUsername":"admin",
+    "artifactoryPassword": "password" 
+}

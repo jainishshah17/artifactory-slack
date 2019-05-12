@@ -7,7 +7,7 @@ var artifactory = require('../artifactory.json');
 // Route the endpoint that our slash command will point to and send back a simple response to indicate that ngrok is working
 router.post('/', function(req, res) {
   request({
-    url: artifactory.artifactoryURL + "/api/system/ping", //URL to hit
+    url: artifactory.artifactoryURL + "/api/system", //URL to hit
     method: 'GET', //Specify the method
     auth: {
       'user': artifactory.artifactoryUsername,
