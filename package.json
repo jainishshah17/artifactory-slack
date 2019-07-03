@@ -1,18 +1,19 @@
 {
   "name": "artifactory-slack",
-  "version": "0.0.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "artifactory slackbot",
+  "main": "index.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": "8.x"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "express": "~4.16.1",
-    "hbs": "~4.0.4",
-    "http-errors": "~1.6.3",
-    "jfrog-cli-go": "^1.25.0",
-    "morgan": "~1.9.1",
-    "request": "^2.88.0"
+    "botkit": "^0.6.21",
+    "dotenv": "^6.2.0"
   }
 }
